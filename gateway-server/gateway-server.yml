@@ -1,10 +1,13 @@
+
 zuul:
   # To exclude the registration of all eureka service ID based routes
   ignored-services: '*'
   routes:
     pizza-service:
       path: /pizza/**
-      url: forward:/pizza
+      # By default, the proxy prefix is stripped from the request before the request is forwarded by
+      stripPrefix: false
     order-service:
       path: /order/**
-      url: forward:/order
+      # By default, the proxy prefix is stripped from the request before the request is forwarded by
+      stripPrefix: false
