@@ -1,4 +1,3 @@
-
 zuul:
   # To exclude the registration of all eureka service ID based routes
   ignored-services: '*'
