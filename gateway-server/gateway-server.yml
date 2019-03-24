@@ -2,5 +2,9 @@ zuul:
   # To exclude the registration of all eureka service ID based routes
   ignored-services: '*'
   routes:
-    pizza-service: /pizza/**
-    order-service: /order/**
+    pizza-service:
+      path: /pizza/**
+      url: forward:/pizza
+    order-service:
+      path: /order/**
+      url: forward:/order
