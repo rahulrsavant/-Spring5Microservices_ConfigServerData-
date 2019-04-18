@@ -2,11 +2,17 @@ zuul:
   # To exclude the registration of all eureka service ID based routes
   ignored-services: '*'
   routes:
-    pizza-service:
-      path: /pizza/**
+    authentication-service:
+      path: /authentication/**
       # By default, the proxy prefix is stripped from the request before the request is forwarded by
       stripPrefix: false
     order-service:
       path: /order/**
       # By default, the proxy prefix is stripped from the request before the request is forwarded by
       stripPrefix: false
+    pizza-service:
+      path: /pizza/**
+      # By default, the proxy prefix is stripped from the request before the request is forwarded by
+      stripPrefix: false
+  # Exclude Authorization from sensitive headers
+  sensitiveHeaders: Cookie,Set-Cookie
