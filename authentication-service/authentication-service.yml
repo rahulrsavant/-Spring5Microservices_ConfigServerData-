@@ -15,3 +15,11 @@ spring:
             # With Java >= 9, to avoid:
             # SQLFeatureNotSupportedException: Method PgConnection.createClob() is not yet implemented
             non_contextual_creation: true
+
+security:
+  jwt:
+    token:
+      # Value in milliseconds
+      expireLength: 10800000
+      secretKey: 72=83eH97$7f408adAC
+      secretKeyEncrypted: "{cipher}7e18a5fe94eb7e2f193a861add30d3f5982ae5f8929e3c45974153944cbee08e102c54c76ccac789943d1ab8452226e6"
