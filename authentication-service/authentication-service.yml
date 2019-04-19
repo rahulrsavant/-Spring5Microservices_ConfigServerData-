@@ -19,7 +19,6 @@ spring:
 security:
   jwt:
     token:
-      # Value in milliseconds
-      expireLength: 10800000
+      expirationTimeInMilliseconds: 10800000
       # Same behaviour as spring.datasource.password configuration value
       secretKey: "{cipher}7e18a5fe94eb7e2f193a861add30d3f5982ae5f8929e3c45974153944cbee08e102c54c76ccac789943d1ab8452226e6"
