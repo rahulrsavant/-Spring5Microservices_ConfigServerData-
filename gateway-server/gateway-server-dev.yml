@@ -1,3 +1,0 @@
-authentication:
-  restApi:
-    validateToken: http://authentication-service/authentication/validate/{token}

@@ -16,3 +16,7 @@ zuul:
       stripPrefix: false
   # Exclude Authorization from sensitive headers
   sensitiveHeaders: Cookie,Set-Cookie
+
+authentication:
+  restApi:
+    validateToken: http://authentication-service/authentication/validate/{token}
