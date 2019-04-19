@@ -17,6 +17,15 @@ zuul:
   # Exclude Authorization from sensitive headers
   sensitiveHeaders: Cookie,Set-Cookie
 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            # Time in milliseconds after which the caller will observe a timeout and walk away from the command execution
+            timeoutInMilliseconds: 5000
+
 authentication:
   restApi:
     allowedRequestURI: authentication-service/authentication
