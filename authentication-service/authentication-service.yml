@@ -20,6 +20,8 @@ spring:
 security:
   jwt:
     token:
+      # Http authentication scheme
+      authorizationPrefix: 'Bearer '
       # Currently 5 hours
       expirationTimeInMilliseconds: 18000000
       # Same behaviour as spring.datasource.password configuration value

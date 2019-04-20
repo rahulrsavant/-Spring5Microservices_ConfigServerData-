@@ -29,5 +29,4 @@ hystrix:
 authentication:
   restApi:
     allowedRequestURI: authentication-service/authentication
-    authorizationPrefix: 'Bearer '
     validateToken: http://authentication-service/authentication/validate/{token}
