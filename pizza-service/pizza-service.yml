@@ -16,3 +16,7 @@ spring:
             # With Java >= 9, to avoid:
             # SQLFeatureNotSupportedException: Method PgConnection.createClob() is not yet implemented
             non_contextual_creation: true
+
+authentication:
+  restApi:
+    authenticationInformation: http://localhost:5555/authentication/authinfo/{token}
