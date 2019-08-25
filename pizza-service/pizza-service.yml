@@ -21,4 +21,4 @@ spring:
 
 authentication:
   restApi:
-    authenticationInformation: http://gateway-server:5555/authentication/authinfo/{token}
+    authenticationInformation: http://localhost:5555/authentication/authinfo/{token}
