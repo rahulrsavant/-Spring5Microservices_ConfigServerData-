@@ -26,8 +26,6 @@ hystrix:
             # Time in milliseconds after which the caller will observe a timeout and walk away from the command execution
             timeoutInMilliseconds: 10000
 
-#zuul.host.socket-timeout-millis: 20000
-#zuul.host.connect-timeout-millis: 20000
 # Timeouts configuration for requests proxied through Zuul
 ribbon:
   ConnectTimeout: 10000
