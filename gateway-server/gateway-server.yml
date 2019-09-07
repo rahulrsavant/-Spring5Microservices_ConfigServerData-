@@ -1,4 +1,7 @@
 zuul:
+  host:
+    connectTimeoutMillis: 5000
+    socketTimeoutMillis: 5000
   # To exclude the registration of all eureka service ID based routes
   ignored-services: '*'
   routes:
@@ -25,6 +28,7 @@ hystrix:
           thread:
             # Time in milliseconds after which the caller will observe a timeout and walk away from the command execution
             timeoutInMilliseconds: 5000
+
 
 authentication:
   restApi:
