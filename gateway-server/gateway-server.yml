@@ -24,14 +24,14 @@ hystrix:
         isolation:
           thread:
             # Time in milliseconds after which the caller will observe a timeout and walk away from the command execution
-            timeoutInMilliseconds: 5000
+            timeoutInMilliseconds: 10000
 
-
-zuul.host.socket-timeout-millis: 20000
-zuul.host.connect-timeout-millis: 20000
-ribbon.ConnectTimeout: 10000
-ribbon.ReadTimeout: 10000
-
+#zuul.host.socket-timeout-millis: 20000
+#zuul.host.connect-timeout-millis: 20000
+# Timeouts configuration for requests proxied through Zuul
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000
 
 authentication:
   restApi:
