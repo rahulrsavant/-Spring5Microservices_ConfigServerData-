@@ -14,6 +14,14 @@ zuul:
       path: /pizza/**
       # By default, the proxy prefix is stripped from the request before the request is forwarded by
       stripPrefix: false
+    security-jwt-service:
+      path: /security/jwt/**
+      # By default, the proxy prefix is stripped from the request before the request is forwarded by
+      stripPrefix: false
+    security-oauth-service:
+      path: /security/oauth/**
+      # By default, the proxy prefix is stripped from the request before the request is forwarded by
+      stripPrefix: false
   # Exclude Authorization from sensitive headers
   sensitiveHeaders: Cookie,Set-Cookie
 
