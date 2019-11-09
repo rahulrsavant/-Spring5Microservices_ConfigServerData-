@@ -39,6 +39,13 @@ ribbon:
   ConnectTimeout: 10000
   ReadTimeout: 10000
 
+# List of comma separated microservices with a suitable documentation of its Rest API
+restApi:
+  documentedServices: security-jwt-service
+
+
+
+# TODO: Remove from here
 authentication:
   restApi:
     allowedRequestURI: /authentication
