@@ -32,11 +32,11 @@ hystrix:
         isolation:
           thread:
             # Time in milliseconds after which the caller will observe a timeout and walk away from the command execution
-            timeoutInMilliseconds: 10000
+            timeoutInMilliseconds: 15000
 
 # Timeouts configuration for requests proxied through Zuul
 ribbon:
-  ConnectTimeout: 10000
+  ConnectTimeout: 5000
   ReadTimeout: 10000
 
 # List of comma separated microservices with a suitable documentation of its Rest API
