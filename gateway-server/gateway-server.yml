@@ -32,7 +32,7 @@ hystrix:
         isolation:
           thread:
             # Time in milliseconds after which the caller will observe a timeout and walk away from the command execution
-            timeoutInMilliseconds: 15000
+            timeoutInMilliseconds: 30000
 
 # Timeouts configuration for requests proxied through Zuul
 ribbon:
