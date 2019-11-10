@@ -2,10 +2,6 @@ zuul:
   # To exclude the registration of all eureka service ID based routes
   ignored-services: '*'
   routes:
-    authentication-service:
-      path: /authentication/**
-      # By default, the proxy prefix is stripped from the request before the request is forwarded by
-      stripPrefix: false
     order-service:
       path: /order/**
       # By default, the proxy prefix is stripped from the request before the request is forwarded by
