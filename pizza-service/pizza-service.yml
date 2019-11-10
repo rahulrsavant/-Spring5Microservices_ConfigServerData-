@@ -22,10 +22,3 @@ spring:
 security:
   restApi:
     authenticationInformation: http://localhost:5555/security/jwt/authinfo/Spring5Microservices
-
-
-
-# TODO: Remove from here
-authentication:
-  restApi:
-    authenticationInformation: http://localhost:5555/authentication/authinfo/{token}

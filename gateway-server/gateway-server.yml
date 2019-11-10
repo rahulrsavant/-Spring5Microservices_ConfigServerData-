@@ -42,11 +42,3 @@ ribbon:
 # List of comma separated microservices with a suitable documentation of its Rest API
 restApi:
   documentedServices: security-jwt-service
-
-
-
-# TODO: Remove from here
-authentication:
-  restApi:
-    allowedRequestURI: /authentication
-    validateToken: http://authentication-service/authentication/validate/{token}

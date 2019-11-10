@@ -17,10 +17,3 @@ security:
     clientId: Spring5Microservices
     # Raw password: Spring5Microservices
     clientPassword: "{cipher}95db5fce892a2f48d9b93e2bfabf67e5bc84d50a18d1265777cfc547a1185f1cab5c4bbc96b5f6fb4fda66fec6f83f87"
-
-
-
-# TODO: Remove from here
-authentication:
-  restApi:
-    authenticationInformation: http://localhost:5555/authentication/authinfo/{token}
