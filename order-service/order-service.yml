@@ -11,6 +11,13 @@ spring:
   jooq:
     sql-dialect: POSTGRES_9_5
 
+security:
+  restApi:
+    authenticationInformation: http://localhost:5555/security/oauth/check_token?token={token}
+
+
+
+# TODO: Remove from here
 authentication:
   restApi:
     authenticationInformation: http://localhost:5555/authentication/authinfo/{token}

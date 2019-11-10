@@ -19,6 +19,13 @@ spring:
         # To include custom functions we want to use in HQL queries
         metadata_builder_contributor: com.pizza.configuration.persistence.SqlFunctionsMetadataBuilderContributor
 
+security:
+  restApi:
+    authenticationInformation: http://localhost:5555/security/jwt/authinfo/Spring5Microservices
+
+
+
+# TODO: Remove from here
 authentication:
   restApi:
     authenticationInformation: http://localhost:5555/authentication/authinfo/{token}
