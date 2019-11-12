@@ -27,3 +27,7 @@ cache:
     entryCapacity: 2
     expireInSeconds: 3600
     name: jwtConfigurationCache
+  userBlackList:
+    entryCapacity: 20
+    expireInSeconds: 600
+    name: userBlackListCache
