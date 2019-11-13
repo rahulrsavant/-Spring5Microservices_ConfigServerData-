@@ -22,3 +22,9 @@ spring:
 security:
   restApi:
     authenticationInformation: http://localhost:5555/security/jwt/authinfo/Spring5Microservices
+
+cache:
+  userBlackList:
+    entryCapacity: 20
+    expireInSeconds: 600
+    name: userBlackListCache
