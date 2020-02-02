@@ -16,6 +16,9 @@ spring:
             # With Java >= 9, to avoid:
             # SQLFeatureNotSupportedException: Method PgConnection.createClob() is not yet implemented
             non_contextual_creation: true
+        # ONLY REQUIRED for the multi-datasource version of security-jwt-service (there is a git branch with it)
+        implicit_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        physical_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
 
 security:
   jwe:
