@@ -6,7 +6,7 @@ spring:
     # Using environment variable ENCRYPT_KEY=ENCRYPT_KEY
     # Getting the value with POST localhost:8888/encrypt and the password in its body
     # Raw password: microservice
-    password: "{cipher}c5c54009a56a0f215a208067a2b13189091c13480306c81ab68edfb22a6251ca"
+    password: "{cipher}f0c0759246b4a96350c570136adbe3ac9ff4e89c5a0bc37a553a4d7b4ded1b62"
   jpa:
     properties:
       hibernate:
@@ -24,7 +24,7 @@ security:
     authenticationInformation: http://localhost:5555/security/jwt/authinfo
     clientId: Spring5Microservices
     # Raw password: Spring5Microservices
-    clientPassword: "{cipher}95db5fce892a2f48d9b93e2bfabf67e5bc84d50a18d1265777cfc547a1185f1cab5c4bbc96b5f6fb4fda66fec6f83f87"
+    clientPassword: "{cipher}9f746b78f2d521d96cacf9fa65913048ef971dc242030ca5d8c7a56ddf90093cb58dfe71b66255df8ffe1d543680fe88"
 
 cache:
   userBlacklist:
