@@ -37,4 +37,4 @@ ribbon:
 
 # List of comma separated microservices with a suitable documentation of its Rest API
 restApi:
-  documentedServices: security-jwt-service
+  documentedServices: security-jwt-service,pizza-service,order-service
