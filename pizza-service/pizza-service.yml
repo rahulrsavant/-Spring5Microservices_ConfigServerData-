@@ -26,6 +26,14 @@ security:
     # Raw password: Spring5Microservices
     clientPassword: "{cipher}9f746b78f2d521d96cacf9fa65913048ef971dc242030ca5d8c7a56ddf90093cb58dfe71b66255df8ffe1d543680fe88"
 
+rest:
+  connect:
+    timeoutInMilliseconds: 5000
+  read:
+    timeoutInMilliseconds: 30000
+  write:
+    timeoutInMilliseconds: 30000
+
 cache:
   userBlacklist:
     entryCapacity: 20
